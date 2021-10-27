@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP JAVASCRIPT</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body class="bg-info">
+    <div class="container">
+        <header class="row">
+            <h2 class="text-center mt-3 mb-5 text-light">Calculer et convertir votre salaire brut en salaire net</h2>
+        </header>
+        <main class="container-fluid">
+            <div class="row text-center border-bottom border-light">
+                <div class="col-2">Salaire</div>
+                <div class="col-5">Brut</div>
+                <div class="col-5">Net</div>
+            </div>
+            <div class="row text-center border-bottom border-light">
+                <div class="col-2 d-flex align-items-center justify-content-center">Annuel</div>
+                <div class="col-5">
+                    <div class="input-group my-3 px-4">
+                        <input type="text" class="form-control text-center inputtext" id="input0" aria-label="Input text"
+                            value="">
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="input-group my-3 px-4">
+                        <input type="text" class="form-control text-center inputtext" id="input1" aria-label="Input text"
+                            value="">
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center border-bottom border-light">
+                <div class="col-2 d-flex align-items-center justify-content-center">Mensuel</div>
+                <div class="col-5">
+                    <div class="input-group my-3 px-4">
+                        <input type="text" class="form-control text-center inputtext" id="input2" aria-label="Input text"
+                            value="">
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="input-group my-3 px-4">
+                        <input type="text" class="form-control text-center inputtext" id="input3" aria-label="Input text"
+                            value="">
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center border-bottom border-light">
+                <div class="col-2 d-flex align-items-center justify-content-center">Journalier</div>
+                <div class="col-5">
+                    <div class="input-group my-3 px-4">
+                        <input type="text" class="form-control text-center inputtext" id="input4" aria-label="Input text"
+                            value="">
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="input-group my-3 px-4">
+                        <input type="text" class="form-control text-center inputtext" id="input5" aria-label="Input text"
+                            value="">
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center border-bottom border-light">
+                <div class="col-2 d-flex align-items-center justify-content-center">Horaires</div>
+                <div class="col-5">
+                    <div class="input-group my-3 px-4">
+                        <input type="text" class="form-control text-center inputtext" id="input6" aria-label="Input text"
+                            value="">
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="input-group my-3 px-4">
+                        <input type="text" class="form-control text-center inputtext" id="input7" aria-label="Input text"
+                            value="">
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-2 d-flex align-items-center justify-content-center">Options</div>
+                <div class="col-8 d-flex">
+                    <div class="input-group w-75 mx-3 my-3">
+                        <input class="form-control" id="smic" type="button" value="Appliquer le SMIC" aria-label="Option input">
+                    </div>
+                    <div class="input-group w-75 mx-3 my-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3">Taux % :</span>
+                        </div>
+                        <input type="text" class="form-control text-center" id="taux" value="23">
+                    </div>
+                    <div class="input-group w-75 mx-3 my-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="mois">Mois :</span>
+                        </div>
+                        <input type="text" class="form-control text-center" value="12">
+                    </div>
+                    <div class="input-group w-75 mx-3 my-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="heures">Heures :</span>
+                        </div>
+                        <input type="text" class="form-control text-center" value="35">
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-2 d-flex align-items-center justify-content-center">
+                    <div class="d-flex align-items-center">Statut</div>
+                </div>
+                <div class="col-10 d-flex">
+                    <div class="input-group w-75 mx-3 my-3">
+                        <input class="form-control form-control-sm" type="text" value="Cadre :"
+                            aria-label="Disabled input with checkbox" disabled readonly>
+                        <div class="input-group-text">
+                            <input class="form-check-input mt-0" type="checkbox" name="statut" value="0"
+                                aria-label="checkbox for disabled input">
+                        </div>
+                    </div>
+                    <div class="input-group mx-3 my-3">
+                        <input class="form-control form-control-sm" type="text" value="Fonctionnaire :"
+                            aria-label="Disabled input with checkbox" disabled readonly>
+                        <div class="input-group-text">
+                            <input class="form-check-input mt-0" type="checkbox" name="statut" value="1"
+                                aria-label="checkbox for disabled input">
+                        </div>
+                    </div>
+                    <div class="input-group w-75 mx-3 my-3">
+                        <input class="form-control form-control-sm" type="text" value="Portage :"
+                            aria-label="Disabled input with checkbox" disabled readonly>
+                        <div class="input-group-text">
+                            <input class="form-check-input mt-0" type="checkbox" name="statut" value="2"
+                                aria-label="checkbox for disabled input">
+                        </div>
+                    </div>
+                    <div class="input-group mx-3 my-3">
+                        <input class="form-control form-control-sm" type="text" value="Indépendant/Société :"
+                            aria-label="Disabled input with checkbox" disabled readonly>
+                        <div class="input-group-text">
+                            <input class="form-check-input mt-0" type="checkbox" name="statut" value="3"
+                                aria-label="checkbox for disabled input">
+                        </div>
+                    </div>
+                    <div class="input-group mx-3 my-3">
+                        <input class="form-control form-control-sm" type="text" value="Auto-Entrepreneur :"
+                            aria-label="Disabled input with checkbox" disabled readonly>
+                        <div class="input-group-text">
+                            <input class="form-check-input mt-0" type="checkbox" name="statut" value="4"
+                                aria-label="checkbox for disabled input">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="row text-center">
+            <h3 class="text-center mt-5 my-3" id="messageFooter1">Cliquez sur n'importe quel nombre pour calculer votre salaire</h3>
+            <p class="messageFooter2">
+                <span id="span1">Vous gagnez un salaire net mensuel de </span>
+                <span id="span2"><b>€</b> (ce qui représente un salaire brut mensuel de </span>
+                <span><b>€</b>)</span>
+            </p>
+            <p class="messageFooter2">
+                <span id="span3">Si le taux de charges est dans la moyenne soit </span>
+                <span id="span4"><b>%</b>, la différence entre le brut et le net sera de </span>
+                <span>€ chaque mois</span>
+            </p>  
+        </footer>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
